@@ -1,0 +1,47 @@
+.bg1 {
+  color: crimson;
+  padding: 1rem;
+}
+.bg2 {
+  color: #000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+  font-size: 18px;
+}
+td {
+  padding: 10px;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+.image {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  background-color: #033030;
+}
+
+.item_perosn {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0px;
+  border-bottom: 1px solid #e0e0e0;
+}

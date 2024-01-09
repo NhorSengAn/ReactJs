@@ -1,0 +1,35 @@
+.demo {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.arr_map {
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+  font-size: 18px;
+}
+td {
+  padding: 10px;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+  background-color: #e0e0e0;
+}
