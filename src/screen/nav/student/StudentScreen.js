@@ -29,9 +29,23 @@ const StudentScreen = () => {
       {loading ? (
         <h1>Loading...</h1>
       ) : (
-        <div>
+        <div className="products">
           <h1>Products: {products.length}</h1>
           {/* Render your products or other components here */}
+          <div>
+            {products.map((item, index) => {
+              return (
+                <div key={index.id}>
+                  <div>{item.id}</div>
+                  <div>{item.title}</div>
+                  <div>{item.description}</div>
+                  <div>{item.price}</div>
+                  <div>{item.rating}</div>
+                  <div>{item.images}</div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       )}
     </div>
