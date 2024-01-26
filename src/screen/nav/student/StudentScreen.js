@@ -26,28 +26,38 @@ const StudentScreen = () => {
 
   return (
     <div>
-      {loading ? (
-        <h1>Loading...</h1>
-      ) : (
-        <div className="products">
-          <h1>Products: {products.length}</h1>
-          {/* Render your products or other components here */}
-          <div>
-            {products.map((item, index) => {
-              return (
-                <div key={index.id}>
-                  <div>{item.id}</div>
-                  <div>{item.title}</div>
-                  <div>{item.description}</div>
-                  <div>{item.price}</div>
-                  <div>{item.rating}</div>
-                  <div>{item.images}</div>
-                </div>
-              );
-            })}
-          </div>
+      <div className="products">
+        <h1>Products</h1>
+        {/* Render your products or components here */}{" "}
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Rate</th>
+                <th>Image</th>
+              </tr>
+            </thead>
+            <tbody>
+              {products.map((item, index) => (
+                <tr key={item.id}>
+                  <td>{index + 1}</td>
+                  <td>{item.title}</td>
+                  <td>{item.description}</td>
+                  <td>{item.price}</td>
+                  <td>{item.rating}</td>
+                  <td>
+                    <img src={item.image} alt={item.title} width="100" />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
-      )}
+      </div>
     </div>
   );
 };
